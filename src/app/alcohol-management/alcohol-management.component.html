@@ -1,0 +1,31 @@
+<h1>New Task</h1>
+<div>
+ <label>Label:</label>
+ <input #newLabel>
+</div>
+<div>
+  <label>Origin:</label>
+  <input #newOrigin>
+</div>
+  <select #newPrice>
+    <option value="5">$5</option>
+    <option value="6">$6</option>
+    <option value="7">$7</option>
+    <option value="8">$8</option>
+  </select>
+</div>
+<div>
+  <label>Style:</label>
+  <select #newStyle>
+    <option [value]="Stout">Stout</option>
+    <option [value]="Red/Amber">Red/Amber</option>
+    <option [value]="Brown">Brown</option>
+    <option [value]="IPA">IPA</option>
+    <option [value]="Lager">Lager</option>
+    <option [value]="Pale">Pale</option>
+    <option [value]="Cider">Cider</option>
+    <option [value]="Tart & Sour">Tart & Sour</option>
+    <option [value]="Blonde">Blonde</option>
+  </select>
+  <button (click)="submitForm(newDescription.value, newPriority.value)">Add</button>
+</div>
